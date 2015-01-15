@@ -19,6 +19,8 @@
 		D87240581A675E170021D067 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87240401A675E170021D067 /* UIKit.framework */; };
 		D87240601A675E170021D067 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D872405E1A675E170021D067 /* InfoPlist.strings */; };
 		D87240621A675E170021D067 /* RFSegmentViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D87240611A675E170021D067 /* RFSegmentViewTests.m */; };
+		D87240711A675E7D0021D067 /* RFSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D87240701A675E7D0021D067 /* RFSegmentView.m */; };
+		D87240741A678D110021D067 /* RFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87240731A678D110021D067 /* RFViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		D872405D1A675E170021D067 /* RFSegmentViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFSegmentViewTests-Info.plist"; sourceTree = "<group>"; };
 		D872405F1A675E170021D067 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D87240611A675E170021D067 /* RFSegmentViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFSegmentViewTests.m; sourceTree = "<group>"; };
+		D872406F1A675E7D0021D067 /* RFSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegmentView.h; sourceTree = "<group>"; };
+		D87240701A675E7D0021D067 /* RFSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegmentView.m; sourceTree = "<group>"; };
+		D87240721A678D100021D067 /* RFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFViewController.h; sourceTree = "<group>"; };
+		D87240731A678D110021D067 /* RFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 			children = (
 				D872404B1A675E170021D067 /* RFAppDelegate.h */,
 				D872404C1A675E170021D067 /* RFAppDelegate.m */,
+				D87240721A678D100021D067 /* RFViewController.h */,
+				D87240731A678D110021D067 /* RFViewController.m */,
+				D872406E1A675E7D0021D067 /* RFSegmentView */,
 				D872404E1A675E170021D067 /* Images.xcassets */,
 				D87240431A675E170021D067 /* Supporting Files */,
 			);
@@ -142,6 +151,15 @@
 				D872405E1A675E170021D067 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D872406E1A675E7D0021D067 /* RFSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				D872406F1A675E7D0021D067 /* RFSegmentView.h */,
+				D87240701A675E7D0021D067 /* RFSegmentView.m */,
+			);
+			path = RFSegmentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87240741A678D110021D067 /* RFViewController.m in Sources */,
+				D87240711A675E7D0021D067 /* RFSegmentView.m in Sources */,
 				D872404D1A675E170021D067 /* RFAppDelegate.m in Sources */,
 				D87240491A675E170021D067 /* main.m in Sources */,
 			);
@@ -315,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -347,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

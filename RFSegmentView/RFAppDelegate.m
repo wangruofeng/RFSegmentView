@@ -7,7 +7,7 @@
 //
 
 #import "RFAppDelegate.h"
-
+#import "RFViewController.h"
 @implementation RFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +16,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    RFViewController *vc = [[RFViewController alloc] init];
+    self.window.rootViewController = vc;
+    
     return YES;
 }
 
