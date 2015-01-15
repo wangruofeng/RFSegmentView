@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D872403D1A675E170021D067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D872403C1A675E170021D067 /* Foundation.framework */; };
+		D872403F1A675E170021D067 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D872403E1A675E170021D067 /* CoreGraphics.framework */; };
+		D87240411A675E170021D067 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87240401A675E170021D067 /* UIKit.framework */; };
+		D87240471A675E170021D067 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D87240451A675E170021D067 /* InfoPlist.strings */; };
+		D87240491A675E170021D067 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D87240481A675E170021D067 /* main.m */; };
+		D872404D1A675E170021D067 /* RFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D872404C1A675E170021D067 /* RFAppDelegate.m */; };
+		D872404F1A675E170021D067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D872404E1A675E170021D067 /* Images.xcassets */; };
+		D87240561A675E170021D067 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87240551A675E170021D067 /* XCTest.framework */; };
+		D87240571A675E170021D067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D872403C1A675E170021D067 /* Foundation.framework */; };
+		D87240581A675E170021D067 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87240401A675E170021D067 /* UIKit.framework */; };
+		D87240601A675E170021D067 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D872405E1A675E170021D067 /* InfoPlist.strings */; };
+		D87240621A675E170021D067 /* RFSegmentViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D87240611A675E170021D067 /* RFSegmentViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D87240591A675E170021D067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87240311A675E170021D067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D87240381A675E170021D067;
+			remoteInfo = RFSegmentView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D87240391A675E170021D067 /* RFSegmentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFSegmentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D872403C1A675E170021D067 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D872403E1A675E170021D067 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D87240401A675E170021D067 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D87240441A675E170021D067 /* RFSegmentView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFSegmentView-Info.plist"; sourceTree = "<group>"; };
+		D87240461A675E170021D067 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D87240481A675E170021D067 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D872404A1A675E170021D067 /* RFSegmentView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFSegmentView-Prefix.pch"; sourceTree = "<group>"; };
+		D872404B1A675E170021D067 /* RFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFAppDelegate.h; sourceTree = "<group>"; };
+		D872404C1A675E170021D067 /* RFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFAppDelegate.m; sourceTree = "<group>"; };
+		D872404E1A675E170021D067 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D87240541A675E170021D067 /* RFSegmentViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFSegmentViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87240551A675E170021D067 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D872405D1A675E170021D067 /* RFSegmentViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFSegmentViewTests-Info.plist"; sourceTree = "<group>"; };
+		D872405F1A675E170021D067 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D87240611A675E170021D067 /* RFSegmentViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFSegmentViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D87240361A675E170021D067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D872403F1A675E170021D067 /* CoreGraphics.framework in Frameworks */,
+				D87240411A675E170021D067 /* UIKit.framework in Frameworks */,
+				D872403D1A675E170021D067 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87240511A675E170021D067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87240561A675E170021D067 /* XCTest.framework in Frameworks */,
+				D87240581A675E170021D067 /* UIKit.framework in Frameworks */,
+				D87240571A675E170021D067 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D87240301A675E170021D067 = {
+			isa = PBXGroup;
+			children = (
+				D87240421A675E170021D067 /* RFSegmentView */,
+				D872405B1A675E170021D067 /* RFSegmentViewTests */,
+				D872403B1A675E170021D067 /* Frameworks */,
+				D872403A1A675E170021D067 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D872403A1A675E170021D067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D87240391A675E170021D067 /* RFSegmentView.app */,
+				D87240541A675E170021D067 /* RFSegmentViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D872403B1A675E170021D067 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D872403C1A675E170021D067 /* Foundation.framework */,
+				D872403E1A675E170021D067 /* CoreGraphics.framework */,
+				D87240401A675E170021D067 /* UIKit.framework */,
+				D87240551A675E170021D067 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D87240421A675E170021D067 /* RFSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				D872404B1A675E170021D067 /* RFAppDelegate.h */,
+				D872404C1A675E170021D067 /* RFAppDelegate.m */,
+				D872404E1A675E170021D067 /* Images.xcassets */,
+				D87240431A675E170021D067 /* Supporting Files */,
+			);
+			path = RFSegmentView;
+			sourceTree = "<group>";
+		};
+		D87240431A675E170021D067 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D87240441A675E170021D067 /* RFSegmentView-Info.plist */,
+				D87240451A675E170021D067 /* InfoPlist.strings */,
+				D87240481A675E170021D067 /* main.m */,
+				D872404A1A675E170021D067 /* RFSegmentView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D872405B1A675E170021D067 /* RFSegmentViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D87240611A675E170021D067 /* RFSegmentViewTests.m */,
+				D872405C1A675E170021D067 /* Supporting Files */,
+			);
+			path = RFSegmentViewTests;
+			sourceTree = "<group>";
+		};
+		D872405C1A675E170021D067 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D872405D1A675E170021D067 /* RFSegmentViewTests-Info.plist */,
+				D872405E1A675E170021D067 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D87240381A675E170021D067 /* RFSegmentView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87240651A675E170021D067 /* Build configuration list for PBXNativeTarget "RFSegmentView" */;
+			buildPhases = (
+				D87240351A675E170021D067 /* Sources */,
+				D87240361A675E170021D067 /* Frameworks */,
+				D87240371A675E170021D067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFSegmentView;
+			productName = RFSegmentView;
+			productReference = D87240391A675E170021D067 /* RFSegmentView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D87240531A675E170021D067 /* RFSegmentViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87240681A675E170021D067 /* Build configuration list for PBXNativeTarget "RFSegmentViewTests" */;
+			buildPhases = (
+				D87240501A675E170021D067 /* Sources */,
+				D87240511A675E170021D067 /* Frameworks */,
+				D87240521A675E170021D067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D872405A1A675E170021D067 /* PBXTargetDependency */,
+			);
+			name = RFSegmentViewTests;
+			productName = RFSegmentViewTests;
+			productReference = D87240541A675E170021D067 /* RFSegmentViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D87240311A675E170021D067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "王若风";
+				TargetAttributes = {
+					D87240531A675E170021D067 = {
+						TestTargetID = D87240381A675E170021D067;
+					};
+				};
+			};
+			buildConfigurationList = D87240341A675E170021D067 /* Build configuration list for PBXProject "RFSegmentView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D87240301A675E170021D067;
+			productRefGroup = D872403A1A675E170021D067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D87240381A675E170021D067 /* RFSegmentView */,
+				D87240531A675E170021D067 /* RFSegmentViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D87240371A675E170021D067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87240471A675E170021D067 /* InfoPlist.strings in Resources */,
+				D872404F1A675E170021D067 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87240521A675E170021D067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87240601A675E170021D067 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D87240351A675E170021D067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D872404D1A675E170021D067 /* RFAppDelegate.m in Sources */,
+				D87240491A675E170021D067 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87240501A675E170021D067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87240621A675E170021D067 /* RFSegmentViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D872405A1A675E170021D067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D87240381A675E170021D067 /* RFSegmentView */;
+			targetProxy = D87240591A675E170021D067 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D87240451A675E170021D067 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87240461A675E170021D067 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D872405E1A675E170021D067 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D872405F1A675E170021D067 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D87240631A675E170021D067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D87240641A675E170021D067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D87240661A675E170021D067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFSegmentView/RFSegmentView-Prefix.pch";
+				INFOPLIST_FILE = "RFSegmentView/RFSegmentView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D87240671A675E170021D067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFSegmentView/RFSegmentView-Prefix.pch";
+				INFOPLIST_FILE = "RFSegmentView/RFSegmentView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D87240691A675E170021D067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RFSegmentView.app/RFSegmentView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFSegmentView/RFSegmentView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RFSegmentViewTests/RFSegmentViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D872406A1A675E170021D067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RFSegmentView.app/RFSegmentView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RFSegmentView/RFSegmentView-Prefix.pch";
+				INFOPLIST_FILE = "RFSegmentViewTests/RFSegmentViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D87240341A675E170021D067 /* Build configuration list for PBXProject "RFSegmentView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87240631A675E170021D067 /* Debug */,
+				D87240641A675E170021D067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87240651A675E170021D067 /* Build configuration list for PBXNativeTarget "RFSegmentView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87240661A675E170021D067 /* Debug */,
+				D87240671A675E170021D067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D87240681A675E170021D067 /* Build configuration list for PBXNativeTarget "RFSegmentViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87240691A675E170021D067 /* Debug */,
+				D872406A1A675E170021D067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D87240311A675E170021D067 /* Project object */;
+}
