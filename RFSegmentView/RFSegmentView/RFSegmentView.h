@@ -16,7 +16,7 @@
  *  设置风格颜色 默认蓝色风格
  */
 @property(nonatomic ,strong) UIColor *tintColor;
-@property(nonatomic) id<RFSegmentViewDelegate> delegate;
+@property(nonatomic,assign) id<RFSegmentViewDelegate> delegate;
 
 /**
  *  默认构造函数

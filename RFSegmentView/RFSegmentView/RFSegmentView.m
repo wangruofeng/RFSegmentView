@@ -23,9 +23,9 @@
 @property(nonatomic ,strong) UIColor *norColor;
 @property(nonatomic ,strong) UIColor *selColor;
 @property(nonatomic ,strong) UILabel *titleLabel;
-@property(nonatomic)         NSInteger index;
-@property(nonatomic)         BOOL isSelected;
-@property(nonatomic)         id   delegate;
+@property(nonatomic,assign)         NSInteger index;
+@property(nonatomic,assign)         BOOL isSelected;
+@property(nonatomic,assign)         id   delegate;
 
 @end
 
