@@ -199,6 +199,21 @@
     
 }
 
+-(void)setSelectedIndex:(NSInteger)index
+{
+    if (index<self.itemsArray.count) {
+        for (int i=0; i<self.itemsArray.count; i++) {
+            RFSegmentItem *item=self.itemsArray[i];
+            if (i==index) {
+                [item setIsSelected:YES];
+            }
+            else {
+                [item setIsSelected:NO];
+            }
+        }
+    }
+}
+
 #pragma mark - RFSegmentItemDelegate
 - (void)ItemStateChanged:(RFSegmentItem *)currentItem index:(NSInteger)index isSelected:(BOOL)isSelected
 {

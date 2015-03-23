@@ -28,4 +28,11 @@
  */
 - (id)initWithFrame:(CGRect)frame items:(NSArray *)items;
 
+/**
+ *  设置默认选择项
+ *
+ *  @param index 选择项
+ */
+-(void)setSelectedIndex:(NSInteger)index;
+
 @end
