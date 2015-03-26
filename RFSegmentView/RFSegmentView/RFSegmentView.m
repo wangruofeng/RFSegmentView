@@ -202,7 +202,7 @@
 #pragma mark - RFSegmentItemDelegate
 - (void)ItemStateChanged:(RFSegmentItem *)currentItem index:(NSInteger)index isSelected:(BOOL)isSelected
 {
-    if (self.itemsArray.count <=2) {
+    if (self.itemsArray.count <2) {
         return;
     }
     
