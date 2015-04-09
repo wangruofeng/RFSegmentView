@@ -23,9 +23,9 @@
 @property(nonatomic ,strong) UIColor *norColor;
 @property(nonatomic ,strong) UIColor *selColor;
 @property(nonatomic ,strong) UILabel *titleLabel;
-@property(nonatomic)         NSInteger index;
-@property(nonatomic)         BOOL isSelected;
-@property(nonatomic)         id   delegate;
+@property(nonatomic,assign)         NSInteger index;
+@property(nonatomic,assign)         BOOL isSelected;
+@property(nonatomic,assign)         id   delegate;
 
 @end
 
@@ -197,6 +197,21 @@
         }
     }
     
+}
+
+-(void)setSelectedIndex:(NSInteger)index
+{
+    if (index<self.itemsArray.count) {
+        for (int i=0; i<self.itemsArray.count; i++) {
+            RFSegmentItem *item=self.itemsArray[i];
+            if (i==index) {
+                [item setIsSelected:YES];
+            }
+            else {
+                [item setIsSelected:NO];
+            }
+        }
+    }
 }
 
 #pragma mark - RFSegmentItemDelegate

@@ -35,6 +35,7 @@
         RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(0, 10+init_y, kScreenWidth, 60) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
         segmentView.tintColor = [self getRandomColor];
         segmentView.delegate = self;
+        [segmentView setSelectedIndex:2];
         [self.view addSubview:segmentView];
         init_y +=60;
     }

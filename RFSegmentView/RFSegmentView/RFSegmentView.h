@@ -16,7 +16,7 @@
  *  设置风格颜色 默认蓝色风格
  */
 @property(nonatomic ,strong) UIColor *tintColor;
-@property(nonatomic) id<RFSegmentViewDelegate> delegate;
+@property(nonatomic,assign) id<RFSegmentViewDelegate> delegate;
 
 /**
  *  默认构造函数
@@ -27,5 +27,12 @@
  *  @return 当前实例
  */
 - (id)initWithFrame:(CGRect)frame items:(NSArray *)items;
+
+/**
+ *  设置默认选择项
+ *
+ *  @param index 选择项
+ */
+-(void)setSelectedIndex:(NSInteger)index;
 
 @end
