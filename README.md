@@ -29,11 +29,11 @@ _**iOS6.0 and later**_
 ```
 
 ##Screenshot
-![(Screenshot)](https://github.com/xyzyzyxyz/RFSegmentView/raw/master/RFSegmentView/samplePic.png)
+![(Screenshot)](https://github.com/wangruofeng/RFSegmentView/raw/master/RFSegmentView/samplePic.png)
 
 
 ##  Download
-####  You can download binary release from the [latest releases](https://github.com/xyzyzyxyz/RFSegmentView/archive/master.zip).
+####  You can download binary release from the [latest releases](https://github.com/wangruofeng/RFSegmentView/archive/master.zip).
 
 
 ## License
