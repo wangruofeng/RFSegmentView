@@ -7,16 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @protocol RFSegmentViewDelegate <NSObject>
-- (void)segmentViewSelectIndex:(NSInteger)index;
+
+- (void)segmentViewDidSelected:(NSUInteger)index;
 @end
 
 @interface RFSegmentView : UIView
+
 /**
  *  设置风格颜色 默认蓝色风格
  */
-@property(nonatomic ,strong) UIColor *tintColor;
-@property(nonatomic) id<RFSegmentViewDelegate> delegate;
+@property (nonatomic, strong) UIColor *tintColor;
+
+/**
+ *  设置RFSegmentView的左右间距 默认15
+ */
+@property (nonatomic, assign) CGFloat leftRightMargin;
+
+/**
+ *  设置RFSegmentView的每个选项卡的高度 默认30
+ */
+@property (nonatomic, assign) CGFloat itemHeight;
+@property (nonatomic, assign) id<RFSegmentViewDelegate> delegate;
 
 /**
  *  默认构造函数
@@ -26,6 +39,7 @@
  *
  *  @return 当前实例
  */
-- (id)initWithFrame:(CGRect)frame items:(NSArray *)items;
+- (instancetype)initWithFrame:(CGRect)frame
+                        items:(NSArray<NSString *> *)items;
 
 @end

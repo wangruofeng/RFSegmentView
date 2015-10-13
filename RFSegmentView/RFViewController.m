@@ -9,8 +9,9 @@
 #import "RFViewController.h"
 #import "RFSegmentView.h"
 
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
 @interface RFViewController ()<RFSegmentViewDelegate>
 
 @end
@@ -33,15 +34,16 @@
     float init_y = 0;
     for (int i=0; i<10; i++) {
         RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(0, 10+init_y, kScreenWidth, 60) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
-        segmentView.tintColor = [self getRandomColor];
-        segmentView.delegate = self;
+        segmentView.tintColor       = [self getRandomColor];
+        segmentView.delegate        = self;
+//        segmentView.leftRightMargin = arc4random()%10 + 5;
+//        segmentView.itemHeight      = arc4random()%10 + 25;
+        
         [self.view addSubview:segmentView];
-        init_y +=60;
+        init_y += 60;
     }
+
     
-    
-    
-    // Do any additional setup after loading the view.
 }
 
 - (UIColor *)getRandomColor
@@ -50,26 +52,9 @@
     return color;
 }
 
-- (void)segmentViewSelectIndex:(NSInteger)index
+- (void)segmentViewDidSelected:(NSUInteger)index
 {
-    NSLog(@"current index is %d",index);
+    NSLog(@"current index is %lu",(unsigned long)index);
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
