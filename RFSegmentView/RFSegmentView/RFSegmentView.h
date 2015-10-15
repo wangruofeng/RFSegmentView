@@ -29,6 +29,11 @@
  *  设置RFSegmentView的每个选项卡的高度 默认30
  */
 @property (nonatomic, assign) CGFloat itemHeight;
+
+/**
+ *  设置选中项 默认0
+ */
+@property (nonatomic, assign) NSUInteger selectedIndex;
 @property (nonatomic, assign) id<RFSegmentViewDelegate> delegate;
 
 /**

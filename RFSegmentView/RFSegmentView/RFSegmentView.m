@@ -123,7 +123,7 @@
     
         NSAssert(items.count >= 2, @"items's cout at least 2!please check!");
         self.titles           = items;
-      
+        self.selectedIndex    = 0;
         self.backgroundColor  = [UIColor clearColor];
         
         
@@ -224,6 +224,23 @@
         }
         
         [self setNeedsLayout];
+    }
+}
+
+- (void)setSelectedIndex:(NSUInteger)index
+{
+    _selectedIndex = index;
+    
+    if (index<self.items.count) {
+        for (int i = 0; i<self.items.count; i++) {
+            RFSegmentItem *item=self.items[i];
+            
+            if (i==index) {
+                [item setIsSelected:YES];
+            }else {
+                [item setIsSelected:NO];
+            }
+        }
     }
 }
 
