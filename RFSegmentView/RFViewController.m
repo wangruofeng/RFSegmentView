@@ -31,16 +31,16 @@
 {
     [super viewDidLoad];
     
-    float init_y = 0;
+    float initY = 0;
     for (int i=0; i<10; i++) {
-        RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(0, 10+init_y, kScreenWidth, 60) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
+        RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(0, 10 + initY, kScreenWidth, 60) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
         segmentView.tintColor       = [self getRandomColor];
         segmentView.delegate        = self;
-//        segmentView.leftRightMargin = arc4random()%10 + 5;
-//        segmentView.itemHeight      = arc4random()%10 + 25;
+        segmentView.selectedIndex   = i%5;
+        
+        initY += 60;
         
         [self.view addSubview:segmentView];
-        init_y += 60;
     }
 
     
