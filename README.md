@@ -3,9 +3,9 @@ Imitate after iOS7 style segmented controls!
 ***It is simple, Elegant, practical！***
 
 
-
 ##  Requirements
 _**iOS6.0 and later**_
+
 
 ##  Usage
 1. `#import "RFSegmentView.h"`
@@ -40,6 +40,3 @@ _**iOS6.0 and later**_
 
 ## License
 RFSegmentView is released under the MIT license. See [LICENSE](/LICENSE) for details.
-
-
-
