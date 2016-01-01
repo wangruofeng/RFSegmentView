@@ -31,7 +31,8 @@ _**iOS6.0 and later**_
 ```
 
 ##Screenshot
-![(Screenshot)](https://github.com/wangruofeng/RFSegmentView/raw/master/RFSegmentView/samplePic.png)
+<!--![(Screenshot)](https://github.com/wangruofeng/RFSegmentView/raw/master/RFSegmentView/samplePic.png)-->
+<img src ="https://github.com/wangruofeng/RFSegmentView/raw/master/RFSegmentView/samplePic.png" witdh = 320 height = 576>
 
 
 ##  Download
