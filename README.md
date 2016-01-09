@@ -4,31 +4,34 @@ Imitate after iOS7 style segmented controls!
 
 
 ##  Requirements
-_**iOS6.0 and later**_
+_**iOS5.0 and later**_
 
 
 ##  Usage
 1. `#import "RFSegmentView.h"`
 2. use `- (instancetype)initWithFrame:(CGRect)frame items:(NSArray<NSString *> *)items;` to initialize
-3. set TintColor and delegate
-4. implement delegate callBack function `- (void)segmentViewDidSelected:(NSUInteger)index;`
+3. set TintColor and delegate or block handler
+4. implement delegate callBack function `- (void)segmentView:(RFSegmentView * __nullable)segmentView didSelectedIndex:(NSUInteger)selectedIndex` if you use delegate,or use block callback `segmentView.handlder = ^ (RFSegmentView * __nullable view, NSInteger selectedIndex) {
+          // doSomething
+        };`
+
                                          
 
 #### below is sample code
 ```objective-c
 
-    float initY = 0;
-    for (int i=0; i<10; i++) {
-        RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(0, 10 + initY, kScreenWidth, 60) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
-        segmentView.tintColor       = [self getRandomColor];
-        segmentView.delegate        = self;
-        segmentView.selectedIndex   = i%5;
+  RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:aRect items:@[@"spring",@"summer",@"autumn",@"winnter"]];
         
-        initY += 60;
+        segmentView.tintColor       = aColor;
+        //segmentView.delegate      = self;
+        segmentView.handlder = ^ (RFSegmentView * __nullable view, NSInteger selectedIndex) {
+           // doSomething
+        };
         
         [self.view addSubview:segmentView];
-    }
 ```
+
+Ps:you can also use delegate callback.
 
 ##Screenshot
 <!--![(Screenshot)](https://github.com/wangruofeng/RFSegmentView/raw/master/RFSegmentView/samplePic.png)-->
