@@ -31,19 +31,29 @@
 {
     [super viewDidLoad];
     
-    float initY = 0;
-    for (int i=0; i<10; i++) {
-        RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(0, 10 + initY, kScreenWidth, 60) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
-        segmentView.tintColor       = [self getRandomColor];
-        segmentView.delegate        = self;
-        segmentView.selectedIndex   = i%5;
+    CGFloat initX           = 0;
+    CGFloat initY           = 20.f;
+    NSInteger numbersOfView = 10;
+    CGFloat viewWidth       = kScreenWidth;
+    CGFloat viewHeight      = (kScreenHeight - initY) / numbersOfView;
+    
+    for (int i = 0; i < numbersOfView; i++) {
+        RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(initX, initY, viewWidth, viewHeight) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
         
-        initY += 60;
+        segmentView.tintColor       = [self getRandomColor];
+        //segmentView.delegate      = self;
+        segmentView.selectedIndex   = i%5;
+        segmentView.itemHeight      = 30.f;
+//        segmentView.leftRightMargin = 50.f;
+//        segmentView.cornerRadius    = 5.f;
+        segmentView.handlder = ^ (RFSegmentView * __nullable view, NSInteger selectedIndex) {
+            NSLog(@"view:%@ selectedIndex: %ld",view,selectedIndex);
+        };
         
         [self.view addSubview:segmentView];
+        
+        initY += viewHeight;
     }
-
-    
 }
 
 - (UIColor *)getRandomColor
@@ -52,7 +62,7 @@
     return color;
 }
 
-- (void)segmentViewDidSelected:(NSUInteger)index
+- (void)segmentView:(RFSegmentView * __nullable)segmentView didSelectedIndex:(NSUInteger)selectedIndex
 {
     NSLog(@"current index is %lu",(unsigned long)index);
 }
