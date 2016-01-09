@@ -21,14 +21,12 @@ _**iOS5.0 and later**_
 ```objective-c
 
   RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:aRect items:@[@"spring",@"summer",@"autumn",@"winnter"]];
-        
-        segmentView.tintColor       = aColor;
-        //segmentView.delegate      = self;
-        segmentView.handlder = ^ (RFSegmentView * __nullable view, NSInteger selectedIndex) {
-           // doSomething
-        };
-        
-        [self.view addSubview:segmentView];
+  segmentView.tintColor       = aColor;
+  //segmentView.delegate      = self;
+  segmentView.handlder = ^ (RFSegmentView * __nullable view, NSInteger selectedIndex) {
+          // doSomething
+  };
+  [self.view addSubview:segmentView];
 ```
 
 Ps:you can also use delegate callback.
