@@ -88,6 +88,7 @@ typedef void (^selectedHandler)(RFSegmentView * __nullable view, NSInteger selec
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 - (instancetype)initWithFrame:(CGRect)frame UNAVAILABLE_ATTRIBUTE;
 + (instancetype)new UNAVAILABLE_ATTRIBUTE;
+- (void)custom:(NSArray<NSString *> * _Nonnull)items;
 
 @end
 
