@@ -200,7 +200,7 @@
     CGFloat leftRightMargin = self.leftRightMargin?:kLeftRightMargin;
     
     //configure bgView
-    self.bgView.frame = CGRectMake(leftRightMargin, (viewHeight - self.itemHeight?:kItemHeight)/2, viewWidth - 2*leftRightMargin, self.itemHeight?:kItemHeight);
+    self.bgView.frame = CGRectMake(leftRightMargin, (viewHeight - (self.itemHeight?self.itemHeight:kItemHeight))/2, viewWidth - 2*leftRightMargin, self.itemHeight?:kItemHeight);
     
     CGFloat itemWidth = CGRectGetWidth(self.bgView.frame)/count;
     CGFloat itemHeight = CGRectGetHeight(self.bgView.frame);
