@@ -123,59 +123,65 @@
 
 @implementation RFSegmentView
 
+- (void)custom:(NSArray<NSString *> * _Nonnull)items
+{
+    NSAssert(items.count >= 2, @"items's cout at least 2!please check!");
+    _titles              = items;
+    _selectedIndex       = 0;
+    self.backgroundColor = [UIColor clearColor];
+    
+    
+    //
+    _bgView = [[UIView alloc] init];
+    _bgView.backgroundColor    = [UIColor whiteColor];
+    _bgView.clipsToBounds      = YES;
+    _bgView.layer.cornerRadius = KDefaultCornerRadius;
+    _bgView.layer.borderWidth  = kBorderLineWidth;
+    _bgView.layer.borderColor  = kDefaultTintColor.CGColor;
+    
+    [self addSubview:_bgView];
+    
+    
+    NSInteger count = _titles.count;
+    for (NSInteger i = 0; i < count; i++) {
+        RFSegmentItem *item = [[RFSegmentItem alloc] initWithFrame:CGRectZero
+                                                             index:i
+                                                             title:items[i]
+                                                          norColor:[UIColor whiteColor]
+                                                          selColor:kDefaultTintColor
+                                                        isSelected:(i == 0)? YES: NO];
+        [_bgView addSubview:item];
+        item.delegate = self;
+        
+        //save all items
+        if (!self.items) {
+            self.items = [[NSMutableArray alloc] initWithCapacity:count];
+        }
+        [_items addObject:item];
+    }
+    
+    //add Ver lines
+    for (NSInteger i = 0; i < count - 1; i++) {
+        UIView *lineView = [[UIView alloc] initWithFrame:CGRectZero];
+        lineView.backgroundColor = kDefaultTintColor;
+        
+        [_bgView addSubview:lineView];
+        
+        //save all lines
+        if (!self.lines) {
+            self.lines = [[NSMutableArray alloc] initWithCapacity:count];
+        }
+        [_lines addObject:lineView];
+    }
+    
+}
+
 - (instancetype)initWithFrame:(CGRect)frame items:(NSArray<NSString *> * _Nonnull)items
 {
     self = [super initWithFrame:frame];
     if (self) {
-    
-        NSAssert(items.count >= 2, @"items's cout at least 2!please check!");
-        _titles              = items;
-        _selectedIndex       = 0;
-        self.backgroundColor = [UIColor clearColor];
         
-        
-        //
-        _bgView = [[UIView alloc] init];
-        _bgView.backgroundColor    = [UIColor whiteColor];
-        _bgView.clipsToBounds      = YES;
-        _bgView.layer.cornerRadius = KDefaultCornerRadius;
-        _bgView.layer.borderWidth  = kBorderLineWidth;
-        _bgView.layer.borderColor  = kDefaultTintColor.CGColor;
-        
-        [self addSubview:_bgView];
-        
-        
-        NSInteger count = _titles.count;
-        for (NSInteger i = 0; i < count; i++) {
-            RFSegmentItem *item = [[RFSegmentItem alloc] initWithFrame:CGRectZero
-                                                                 index:i
-                                                                 title:items[i]
-                                                              norColor:[UIColor whiteColor]
-                                                              selColor:kDefaultTintColor
-                                                            isSelected:(i == 0)? YES: NO];
-            [_bgView addSubview:item];
-            item.delegate = self;
-            
-            //save all items
-            if (!self.items) {
-                self.items = [[NSMutableArray alloc] initWithCapacity:count];
-            }
-            [_items addObject:item];
-        }
-        
-        //add Ver lines
-        for (NSInteger i = 0; i < count - 1; i++) {
-            UIView *lineView = [[UIView alloc] initWithFrame:CGRectZero];
-            lineView.backgroundColor = kDefaultTintColor;
-            
-            [_bgView addSubview:lineView];
-            
-            //save all lines
-            if (!self.lines) {
-                self.lines = [[NSMutableArray alloc] initWithCapacity:count];
-            }
-            [_lines addObject:lineView];
-        }
+        [self custom:items];
         
     }
     
@@ -191,12 +197,13 @@
     CGFloat initY         = 0;
     
     NSInteger count         = self.titles.count;
-    CGFloat itemWidth       = CGRectGetWidth(self.bgView.frame)/count;
-    CGFloat itemHeight      = CGRectGetHeight(self.bgView.frame);
     CGFloat leftRightMargin = self.leftRightMargin?:kLeftRightMargin;
     
     //configure bgView
-    self.bgView.frame = CGRectMake(leftRightMargin, (viewHeight - self.itemHeight?:kItemHeight)/2, viewWidth - 2*leftRightMargin, self.itemHeight?:kItemHeight);
+    self.bgView.frame = CGRectMake(leftRightMargin, (viewHeight - (self.itemHeight?self.itemHeight:kItemHeight))/2, viewWidth - 2*leftRightMargin, self.itemHeight?:kItemHeight);
+    
+    CGFloat itemWidth = CGRectGetWidth(self.bgView.frame)/count;
+    CGFloat itemHeight = CGRectGetHeight(self.bgView.frame);
     
     //configure items
     [self.items enumerateObjectsUsingBlock:^(RFSegmentItem * _Nonnull item, NSUInteger idx, BOOL * _Nonnull stop) {
