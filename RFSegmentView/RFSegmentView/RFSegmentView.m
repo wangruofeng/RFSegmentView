@@ -12,7 +12,7 @@
 #import "RFSegmentView.h"
 
 #define RGB(r,g,b)    RGBA(r,g,b,1)
-#define RGBA(r,g,b,a) ([UIColor colorWithRed:r/255 green:g/255 blue:b/255 alpha:a])
+#define RGBA(r,g,b,a) ([UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a])
 #define kDefaultTintColor       RGB(3, 116, 255)
 #define KDefaultCornerRadius    3.f
 #define kLeftRightMargin        15
@@ -27,6 +27,7 @@
 @end
 
 #pragma mark - RFSegmentItem
+
 @interface RFSegmentItem : UIView
 
 @property (nonatomic, strong) UIColor   *norColor;
@@ -34,10 +35,12 @@
 @property (nonatomic, strong) UILabel   *titleLabel;
 @property (nonatomic, assign) NSInteger index;
 @property (nonatomic, assign) BOOL      isSelected;
-@property (nonatomic, assign) id        delegate;
+@property (nonatomic, weak	) id        delegate;
+
 @end
 
 @implementation RFSegmentItem
+
 - (id)initWithFrame:(CGRect)frame
               index:(NSInteger)index
               title:(NSString *)title
@@ -52,8 +55,13 @@
         _titleLabel.textAlignment   = NSTextAlignmentCenter;
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.font            = kTitleSize;
+		_titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+		
         [self addSubview:_titleLabel];
         
+		[self addConstraint:[NSLayoutConstraint constraintWithItem:_titleLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:0]];
+		[self addConstraint:[NSLayoutConstraint constraintWithItem:_titleLabel attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:0]];
+		
         _norColor        = norColor;
         _selColor        = selColor;
         _titleLabel.text = title;
@@ -63,11 +71,11 @@
     return self;
 }
 
-- (void)setFrame:(CGRect)frame{
-    [super setFrame:frame];
-    
-    self.titleLabel.frame = self.bounds;
-}
+//- (void)setFrame:(CGRect)frame{
+//    [super setFrame:frame];
+//
+//    self.titleLabel.frame = self.bounds;
+//}
 
 - (void)setSelColor:(UIColor *)selColor
 {
@@ -77,7 +85,7 @@
         if (_isSelected) {
             self.titleLabel.textColor = self.norColor;
             self.backgroundColor      = self.selColor;
-        }else{
+        } else {
             self.titleLabel.textColor = self.selColor;
             self.backgroundColor      = self.norColor;
         }
@@ -92,7 +100,7 @@
     if (_isSelected) {
         self.titleLabel.textColor = self.norColor;
         self.backgroundColor      = self.selColor;
-    }else{
+    } else {
         self.titleLabel.textColor = self.selColor;
         self.backgroundColor      = self.norColor;
     }
@@ -119,6 +127,7 @@
 @property (nonatomic, strong) NSArray        *titles;
 @property (nonatomic, strong) NSMutableArray *items;
 @property (nonatomic, strong) NSMutableArray *lines;
+
 @end
 
 @implementation RFSegmentView
@@ -134,7 +143,7 @@
         self.backgroundColor = [UIColor clearColor];
         
         
-        //
+        // bgView
         _bgView = [[UIView alloc] init];
         _bgView.backgroundColor    = [UIColor whiteColor];
         _bgView.clipsToBounds      = YES;
@@ -191,8 +200,8 @@
     CGFloat initY         = 0;
     
     NSInteger count         = self.titles.count;
-    CGFloat itemWidth       = CGRectGetWidth(self.bgView.frame)/count;
-    CGFloat itemHeight      = CGRectGetHeight(self.bgView.frame);
+    CGFloat itemWidth       = viewWidth/count;
+    CGFloat itemHeight      = viewHeight;
     CGFloat leftRightMargin = self.leftRightMargin?:kLeftRightMargin;
     
     //configure bgView
@@ -262,6 +271,7 @@
 }
 
 #pragma mark - RFSegmentItemDelegate
+
 - (void)ItemStateChanged:(RFSegmentItem *)currentItem index:(NSInteger)index isSelected:(BOOL)isSelected
 {
     

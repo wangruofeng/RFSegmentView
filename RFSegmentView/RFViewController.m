@@ -38,7 +38,7 @@
     CGFloat viewHeight      = (kScreenHeight - initY) / numbersOfView;
     
     for (int i = 0; i < numbersOfView; i++) {
-        RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(initX, initY, viewWidth, viewHeight) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
+        RFSegmentView *segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(initX, initY, viewWidth, viewHeight) items:@[@"spring",@"summer",@"autumn",@"winnter"]];
         
         segmentView.tintColor       = [self getRandomColor];
         //segmentView.delegate      = self;
