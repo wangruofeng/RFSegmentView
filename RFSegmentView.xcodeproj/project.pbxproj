@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		0E001B692380FFD7008B9B03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		0E001B6A2380FFD7008B9B03 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
-		0E001B6E2381024E008B9B03 /* RFSegmentView.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = RFSegmentView.podspec; sourceTree = SOURCE_ROOT; };
+		0E001B6E2381024E008B9B03 /* RFSegmentView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RFSegmentView.podspec; sourceTree = SOURCE_ROOT; };
 		0E10740B1BCCF9EF00364776 /* samplePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samplePic.png; sourceTree = "<group>"; };
 		D87240391A675E170021D067 /* RFSegmentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFSegmentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872403C1A675E170021D067 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -215,7 +215,7 @@
 				ORGANIZATIONNAME = "王若风";
 				TargetAttributes = {
 					D87240381A675E170021D067 = {
-						DevelopmentTeam = 2N5KTK34YU;
+						DevelopmentTeam = Q2T8K3RPZ5;
 					};
 					D87240531A675E170021D067 = {
 						DevelopmentTeam = 2N5KTK34YU;
@@ -418,7 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 2N5KTK34YU;
+				DEVELOPMENT_TEAM = Q2T8K3RPZ5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RFSegmentView/RFSegmentView-Prefix.pch";
 				INFOPLIST_FILE = RFSegmentView/Info.plist;
@@ -435,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 2N5KTK34YU;
+				DEVELOPMENT_TEAM = Q2T8K3RPZ5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RFSegmentView/RFSegmentView-Prefix.pch";
 				INFOPLIST_FILE = RFSegmentView/Info.plist;

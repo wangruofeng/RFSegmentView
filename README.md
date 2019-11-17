@@ -9,9 +9,9 @@ _**iOS8.0 and later**_
 
 ##  Usage
 1. `#import "RFSegmentView.h"`
-2. use `- (instancetype)initWithFrame:(CGRect)frame items:(NSArray<NSString *> *)items;` to initialize
+2. use `- (instancetype)initWithFrame:(CGRect)frame titles:(NSArray<NSString *> *)titles;` to initialize
 3. set TintColor and delegate or block handler
-4. implement delegate callBack function `- (void)segmentView:(RFSegmentView * __nullable)segmentView didSelectedIndex:(NSUInteger)selectedIndex` if you use delegate,or use block callback `segmentView.handlder = ^ (RFSegmentView * __nullable view, NSInteger selectedIndex) {
+4. implement delegate callBack function `- (void)segmentView:(RFSegmentView * __nullable)segmentView didSelectedIndex:(NSUInteger)selectedIndex` if you use delegate,or use block callback `segmentView.handlder = ^ (RFSegmentView * __nullable view, NSUInteger selectedIndex) {
           // doSomething
         };`
 
@@ -20,10 +20,10 @@ _**iOS8.0 and later**_
 #### below is sample code
 ```objective-c
 
-  RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:aRect items:@[@"spring",@"summer",@"autumn",@"winnter"]];
+  RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:aRect titles:@[@"spring",@"summer",@"autumn",@"winnter"]];
   segmentView.tintColor       = aColor;
   //segmentView.delegate      = self;
-  segmentView.handlder = ^ (RFSegmentView * __nullable view, NSInteger selectedIndex) {
+  segmentView.handlder = ^ (RFSegmentView * __nullable view, NSUInteger selectedIndex) {
           // doSomething
   };
   [self.view addSubview:segmentView];

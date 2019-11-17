@@ -16,7 +16,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol RFSegmentViewDelegate <NSObject>
+
+@required
 - (void)segmentView:(RFSegmentView * __nullable)segmentView didSelectedIndex:(NSUInteger)selectedIndex;
+
 @end
 
 /**
@@ -25,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  Example:
  
-     RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:aRect items:@[@"spring",@"summer",@"autumn",@"winnter"]];
+     RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:aRect titles:@[@"spring",@"summer",@"autumn",@"winnter"]];
      
      segmentView.tintColor       = [UIColor orangeColor];
      segmentView.selectedIndex   = 2;
@@ -42,9 +45,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface RFSegmentView : UIView
 
-typedef void (^selectedHandler)(RFSegmentView * __nullable view, NSInteger selectedIndex);
+typedef void (^selectedHandler)(RFSegmentView * __nullable view, NSUInteger selectedIndex);
 
 #pragma mark - Accessing the Delegate
+
 ///=============================================================================
 /// @name Accessing the Delegate
 ///=============================================================================
@@ -52,6 +56,7 @@ typedef void (^selectedHandler)(RFSegmentView * __nullable view, NSInteger selec
 @property (nullable, nonatomic, weak) id<RFSegmentViewDelegate> delegate;
 
 #pragma mark - Accessing the BlockHandler
+
 ///=============================================================================
 /// @name Accessing the BlockHandler
 ///=============================================================================
@@ -59,6 +64,7 @@ typedef void (^selectedHandler)(RFSegmentView * __nullable view, NSInteger selec
 @property (nullable, nonatomic, copy) selectedHandler handlder;
 
 #pragma mark - Configuring the Text Attributes
+
 ///=============================================================================
 /// @name Configuring the Text Attributes
 ///=============================================================================
@@ -70,6 +76,7 @@ typedef void (^selectedHandler)(RFSegmentView * __nullable view, NSInteger selec
 @property (nonatomic, assign, getter=currentSelectedIndex) NSUInteger selectedIndex; ///< set which item is seltected, default 0.
 
 #pragma mark - Initializer
+
 ///=============================================================================
 /// @name Initializer
 ///=============================================================================
@@ -78,12 +85,12 @@ typedef void (^selectedHandler)(RFSegmentView * __nullable view, NSInteger selec
  *  Creates an RFSegmentView,designated initializer.
  *
  *  @param frame RFSegmentView's frame.
- *  @param items a array of titles.
+ *  @param titles a array of titles.
  *
  *  @return a RFSegmentView instance, or nil if fail.
  */
 - (instancetype)initWithFrame:(CGRect)frame
-                        items:(NSArray<NSString *> * _Nonnull)items;
+					   titles:(NSArray<NSString *> * _Nonnull)titles;
 
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 - (instancetype)initWithFrame:(CGRect)frame UNAVAILABLE_ATTRIBUTE;
