@@ -8,16 +8,40 @@ _**iOS8.0 and later**_
 
 
 ##  Usage
-1. `#import "RFSegmentView.h"`
-2. use `- (instancetype)initWithFrame:(CGRect)frame titles:(NSArray<NSString *> *)titles;` to initialize
-3. set TintColor and delegate or block handler
-4. implement delegate callBack function `- (void)segmentView:(RFSegmentView * __nullable)segmentView didSelectedIndex:(NSUInteger)selectedIndex` if you use delegate,or use block callback `segmentView.handlder = ^ (RFSegmentView * __nullable view, NSUInteger selectedIndex) {
-          // doSomething
-        };`
 
-                                         
+### install via source code
 
-#### below is sample code
+1. download  the newest code , and `#import "RFSegmentView.h"`
+2. use blow method to initialize
+```objective-c
+ - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray<NSString *> *)titles; 
+```
+3. set TintColor and delegate or block handler if needed
+4. implement delegate callBack function if you use delegate
+```objective-c
+- (void)segmentView:(RFSegmentView * __nullable)segmentView didSelectedIndex:(NSUInteger)selectedIndex;
+```
+or use block callback 
+```objective-c
+segmentView.handlder = ^ (RFSegmentView * __nullable view, NSUInteger selectedIndex) {
+	// doSomething
+};
+```
+
+### install via CocoaPod
+
+first add to config to Podfile
+```ruby
+pod 'RFSegmentView', '~>1.3.0'
+```
+
+then import header file and  enjoy it.
+```objective-c
+#import <RFSegmentView.h>
+```
+
+###  below is sample code
+
 ```objective-c
 
   RFSegmentView* segmentView = [[RFSegmentView alloc] initWithFrame:aRect titles:@[@"spring",@"summer",@"autumn",@"winnter"]];
