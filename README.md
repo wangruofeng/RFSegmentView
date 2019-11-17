@@ -31,7 +31,7 @@ _**iOS5.0 and later**_
 
 Ps:you can also use delegate callback.
 
-##Screenshot
+## Screenshot
 <!--![(Screenshot)](https://github.com/wangruofeng/RFSegmentView/raw/master/RFSegmentView/samplePic.png)-->
 <img src ="https://github.com/wangruofeng/RFSegmentView/raw/master/RFSegmentView/samplePic.png" witdh = 320 height = 576>
 
