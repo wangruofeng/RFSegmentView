@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E001B6B2380FFD7008B9B03 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E001B692380FFD7008B9B03 /* README.md */; };
+		0E001B6C2380FFD7008B9B03 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E001B6A2380FFD7008B9B03 /* LICENSE.md */; };
 		0E10740C1BCCF9EF00364776 /* samplePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E10740B1BCCF9EF00364776 /* samplePic.png */; };
 		D872403D1A675E170021D067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D872403C1A675E170021D067 /* Foundation.framework */; };
 		D872403F1A675E170021D067 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D872403E1A675E170021D067 /* CoreGraphics.framework */; };
@@ -35,12 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E001B692380FFD7008B9B03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		0E001B6A2380FFD7008B9B03 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		0E10740B1BCCF9EF00364776 /* samplePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samplePic.png; sourceTree = "<group>"; };
 		D87240391A675E170021D067 /* RFSegmentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFSegmentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872403C1A675E170021D067 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D872403E1A675E170021D067 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D87240401A675E170021D067 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D87240441A675E170021D067 /* RFSegmentView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RFSegmentView-Info.plist"; sourceTree = "<group>"; };
+		D87240441A675E170021D067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D87240461A675E170021D067 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D87240481A675E170021D067 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D872404A1A675E170021D067 /* RFSegmentView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFSegmentView-Prefix.pch"; sourceTree = "<group>"; };
@@ -119,7 +123,10 @@
 				D872404C1A675E170021D067 /* RFAppDelegate.m */,
 				D87240721A678D100021D067 /* RFViewController.h */,
 				D87240731A678D110021D067 /* RFViewController.m */,
-				D872406E1A675E7D0021D067 /* RFSegmentView */,
+				D872406F1A675E7D0021D067 /* RFSegmentView.h */,
+				D87240701A675E7D0021D067 /* RFSegmentView.m */,
+				0E001B6A2380FFD7008B9B03 /* LICENSE.md */,
+				0E001B692380FFD7008B9B03 /* README.md */,
 				D872404E1A675E170021D067 /* Images.xcassets */,
 				0E10740B1BCCF9EF00364776 /* samplePic.png */,
 				D87240431A675E170021D067 /* Supporting Files */,
@@ -130,7 +137,7 @@
 		D87240431A675E170021D067 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D87240441A675E170021D067 /* RFSegmentView-Info.plist */,
+				D87240441A675E170021D067 /* Info.plist */,
 				D87240451A675E170021D067 /* InfoPlist.strings */,
 				D87240481A675E170021D067 /* main.m */,
 				D872404A1A675E170021D067 /* RFSegmentView-Prefix.pch */,
@@ -154,15 +161,6 @@
 				D872405E1A675E170021D067 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D872406E1A675E7D0021D067 /* RFSegmentView */ = {
-			isa = PBXGroup;
-			children = (
-				D872406F1A675E7D0021D067 /* RFSegmentView.h */,
-				D87240701A675E7D0021D067 /* RFSegmentView.m */,
-			);
-			path = RFSegmentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E001B6C2380FFD7008B9B03 /* LICENSE.md in Resources */,
 				D87240471A675E170021D067 /* InfoPlist.strings in Resources */,
 				0E10740C1BCCF9EF00364776 /* samplePic.png in Resources */,
+				0E001B6B2380FFD7008B9B03 /* README.md in Resources */,
 				D872404F1A675E170021D067 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +417,7 @@
 				DEVELOPMENT_TEAM = 2N5KTK34YU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RFSegmentView/RFSegmentView-Prefix.pch";
-				INFOPLIST_FILE = "RFSegmentView/RFSegmentView-Info.plist";
+				INFOPLIST_FILE = RFSegmentView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangdada.${PRODUCT_NAME:rfc1034identifier}";
@@ -434,7 +434,7 @@
 				DEVELOPMENT_TEAM = 2N5KTK34YU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RFSegmentView/RFSegmentView-Prefix.pch";
-				INFOPLIST_FILE = "RFSegmentView/RFSegmentView-Info.plist";
+				INFOPLIST_FILE = RFSegmentView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangdada.${PRODUCT_NAME:rfc1034identifier}";
