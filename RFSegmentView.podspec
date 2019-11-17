@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "RFSegmentView"
-  spec.version      = "1.1.0"
+  spec.version      = "1.2.0"
   spec.summary      = "Imitate iOS7 style segmented controls, simple, practical！"
   spec.homepage     = "https://github.com/wangruofeng/RFSegmentView"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -42,9 +42,6 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "wangruofeng" => "wangruofeng007@gmail.com" }
-  # Or just: spec.author    = "王若风"
-  # spec.authors            = { "王若风" => "wangruofeng007@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/王若风"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
