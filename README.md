@@ -4,7 +4,7 @@ Imitate after iOS7 style segmented controls!
 
 
 ##  Requirements
-_**iOS5.0 and later**_
+_**iOS8.0 and later**_
 
 
 ##  Usage
