@@ -39,7 +39,7 @@
     
     for (int i = 0; i < numbersOfView; i++) {
         RFSegmentView *segmentView = [[RFSegmentView alloc] initWithFrame:CGRectMake(initX, initY, viewWidth, viewHeight)
-																   titles:@[@"spring",@"summer",@"autumn",@"winnter"]];
+																   titles:@[@"spring",@"summer",@"autumn",@"winter"]];
         
         segmentView.tintColor       = [self getRandomColor];
         //segmentView.delegate      = self;
@@ -48,7 +48,7 @@
         segmentView.leftRightMargin = 16.0;
 //        segmentView.cornerRadius    = 5.f;
         segmentView.handlder = ^ (RFSegmentView * __nullable view, NSUInteger selectedIndex) {
-            NSLog(@"view:%@ selectedIndex: %ld",view,selectedIndex);
+			NSLog(@"view:%@ selectedIndex: %lu",view,(unsigned long)selectedIndex);
         };
         
         [self.view addSubview:segmentView];

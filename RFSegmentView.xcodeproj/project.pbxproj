@@ -10,7 +10,7 @@
 		0E001B6B2380FFD7008B9B03 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E001B692380FFD7008B9B03 /* README.md */; };
 		0E001B6C2380FFD7008B9B03 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E001B6A2380FFD7008B9B03 /* LICENSE.md */; };
 		0E001B6F2381024E008B9B03 /* RFSegmentView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0E001B6E2381024E008B9B03 /* RFSegmentView.podspec */; };
-		0E10740C1BCCF9EF00364776 /* samplePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E10740B1BCCF9EF00364776 /* samplePic.png */; };
+		0E91C7A523921CDB0042D0A8 /* samplePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E91C7A423921CDB0042D0A8 /* samplePic.png */; };
 		D872403D1A675E170021D067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D872403C1A675E170021D067 /* Foundation.framework */; };
 		D872403F1A675E170021D067 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D872403E1A675E170021D067 /* CoreGraphics.framework */; };
 		D87240411A675E170021D067 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87240401A675E170021D067 /* UIKit.framework */; };
@@ -41,7 +41,7 @@
 		0E001B692380FFD7008B9B03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		0E001B6A2380FFD7008B9B03 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		0E001B6E2381024E008B9B03 /* RFSegmentView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RFSegmentView.podspec; sourceTree = SOURCE_ROOT; };
-		0E10740B1BCCF9EF00364776 /* samplePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samplePic.png; sourceTree = "<group>"; };
+		0E91C7A423921CDB0042D0A8 /* samplePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = samplePic.png; sourceTree = "<group>"; };
 		D87240391A675E170021D067 /* RFSegmentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFSegmentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872403C1A675E170021D067 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D872403E1A675E170021D067 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,7 +131,7 @@
 				0E001B692380FFD7008B9B03 /* README.md */,
 				0E001B6E2381024E008B9B03 /* RFSegmentView.podspec */,
 				D872404E1A675E170021D067 /* Images.xcassets */,
-				0E10740B1BCCF9EF00364776 /* samplePic.png */,
+				0E91C7A423921CDB0042D0A8 /* samplePic.png */,
 				D87240431A675E170021D067 /* Supporting Files */,
 			);
 			path = RFSegmentView;
@@ -249,9 +249,9 @@
 			files = (
 				0E001B6C2380FFD7008B9B03 /* LICENSE.md in Resources */,
 				D87240471A675E170021D067 /* InfoPlist.strings in Resources */,
-				0E10740C1BCCF9EF00364776 /* samplePic.png in Resources */,
 				0E001B6B2380FFD7008B9B03 /* README.md in Resources */,
 				D872404F1A675E170021D067 /* Images.xcassets in Resources */,
+				0E91C7A523921CDB0042D0A8 /* samplePic.png in Resources */,
 				0E001B6F2381024E008B9B03 /* RFSegmentView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

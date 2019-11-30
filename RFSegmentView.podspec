@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "RFSegmentView"
-  spec.version      = "1.3.1"
+  spec.version      = "1.3.2"
   spec.summary      = "Imitate iOS7 style segmented controls, simple, practical！"
   spec.homepage     = "https://github.com/wangruofeng/RFSegmentView"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
